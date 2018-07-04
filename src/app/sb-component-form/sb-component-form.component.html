@@ -1,0 +1,5 @@
+<div *ngFor="let field of type.config">
+  <mat-form-field>
+    <input matInput [type]="fieldTypes[field]" [placeholder]="field" value="">
+  </mat-form-field>
+</div>

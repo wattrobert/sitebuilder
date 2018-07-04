@@ -1,0 +1,24 @@
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#main-container {
+    position: absolute;
+    top: 60px;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+#main-sidenav {
+    width: 250px;
+    a.mat-list-item.active {
+        color: blueviolet;
+    }
+}
+
+#main-content {
+    padding:15px;
+}

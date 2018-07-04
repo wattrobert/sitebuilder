@@ -1,0 +1,34 @@
+<mat-toolbar id="main-header">
+    <span>Site Builder</span>
+</mat-toolbar>
+<mat-drawer-container id="main-container">
+
+    <mat-drawer mode="side"
+                id="main-sidenav"
+                opened>
+
+        <mat-nav-list>
+            <a mat-list-item
+               routerLinkActive="active"
+               routerLink="/websites">
+                <mat-icon matListIcon>important_devices</mat-icon> Websites</a>
+            <a mat-list-item
+               routerLinkActive="active"
+               routerLink="/companies">
+                <mat-icon matListIcon>store</mat-icon> Companies </a>
+            <a mat-list-item
+               routerLinkActive="active"
+               routerLink="/products">
+                <mat-icon matListIcon>local_offer</mat-icon> Products </a>
+            <a mat-list-item
+               routerLinkActive="active"
+               routerLink="/components">
+                <mat-icon matListIcon>web</mat-icon> Components </a>
+        </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content id="main-content">
+
+        <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+</mat-drawer-container>
